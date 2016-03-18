@@ -72,7 +72,7 @@ px      68    160    252    */
     padding: 0;
   }
   figure .buttons {
-    left: 16%;
+    top: 45%;
   }
   #feature .media {
     margin: 0px 0px 35px;
@@ -134,6 +134,15 @@ px      68    160    252    */
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   }
 }
+
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+  figure .buttons{
+	  top: 15%;
+  }
+  
+  #works figure .buttons{
+	  top: 40%;
+  }
 /*		Wide Mobile Layout: 480px.
 		Gutters: 24px.
 		Outer margins: 22px.
