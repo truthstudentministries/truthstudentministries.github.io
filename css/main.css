@@ -1,9 +1,15 @@
-@import url(http://fonts.googleapis.com/css?family=Roboto:400,300,100,500,700);
-@import url(http://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700);
 @import url(http://fonts.googleapis.com/css?family=Chivo+Handgloves);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+
+@font-face {
+      font-family: 'Rebel';
+      src: url("../fonts/RebelHeartMadonna.otf") format("opentype");
+      font-weight: normal;
+      font-style: normal;
+    }
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 h1,
 h2,
@@ -11,10 +17,10 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   line-height: 22px;
   font-size: 16px;
   font-weight: 300;
@@ -98,31 +104,37 @@ a:hover {
 
 #top-bar {
   background: rgba(255,255,255,0.9);
-  background: #252839;
-  color: #fff;
+  //background: #252839;
   -webkit-transition: all 0.2s ease-out 0s;
-  transition: all 0.2s ease-out 0s;
+  transition: all .5s ease-out 0s;
   padding: 15px 0;
-  -webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
-  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  //-webkit-box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  //box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.1);
+  box-shadow: 0 5px 15px rgba(0,0,0,.2);
+  -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.2);
 }
 #top-bar .navbar-nav > li > a:hover {
   background: transparent;
 }
 #top-bar.animated-header {
+  background: rgba(255,255,255,0);
   padding: 5px 0;
   //background: #ffffff;
-  box-shadow: 0 5px 15px rgba(0,0,0,.2);
+  //box-shadow: 0 5px 15px rgba(0,0,0,.2);
+  box-shadow: none;
+}
+#top-bar.animated-header  .main-menu li > a{
+  color: rgba(255,255,255,0.8);
 }
 #top-bar .main-menu li > a {
-  color: #FFFFFF;
+  color: #23527c;
 }
 #top-bar .main-menu li {
   position: relative;
 }
 #top-bar .main-menu li a {
-  font-size: 14px;
-  font-weight: 500;
+  font-size: 18px;
+  font-weight: 700;
   border-bottom: 2px solid transparent;
   -webkit-transition: .3s all;
   -o-transition: .3s all;
@@ -130,7 +142,7 @@ a:hover {
   text-transform: uppercase;
 }
 #top-bar .main-menu li a:hover {
-  color: #F2B632;
+  //color: #F2B632;
 }
 .navbar-custom .nav li > a {
   position: relative;
@@ -147,7 +159,7 @@ a:hover {
   opacity: 0;
 }
 #hero-area {
-  background: url('../images/peer.jpg') no-repeat 50%;
+  background: url('../images/logs.jpg') no-repeat 50%;
   background-size: cover;
   background-attachment: fixed;
   padding: 230px 0;
@@ -170,22 +182,18 @@ a:hover {
   z-index: 999;
 }
 #hero-area h1 {
-  font-size: 40px;
-  line-height: 50px;
-  color: #FFF;
+  font-size: 7em;
+  color: #F2B632;
   font-weight: 700;
+  font-family: 'Rebel','Montserrat',sans-serif;
   margin-bottom: 15px;
   text-transform: uppercase;
 }
 #hero-area h2 {
-  font-size: 18px;
-  font-weight: 300;
-  margin-bottom: 38px;
-  line-height: 27px;
-  text-transform: uppercase;
-  color: #E0E0E0;
-  font-family: 'Roboto', sans-serif;
-  margin-top: 25px;
+  
+}
+#hero-area h3 {
+  margin-right: 150px;
 }
 #hero-area .btn {
   background: none;
@@ -226,7 +234,7 @@ a:hover {
 #call-to-action .block p {
   font-size: 15px;
   font-weight: 300;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
   margin-top: 20px;
 }
 #call-to-action .block .btn-contact {
@@ -567,9 +575,11 @@ figure figcaption p {
   font-size: 22px;
   color: #F2B632;
 }
+/*
 .cd-headline.slide .cd-words-wrapper {
   color: #F2B632;
-}
+  font-family: 'Rebel', 'Montserrat', Sans-serif;
+}*/
 ul.social-icons {
   height: auto;
   overflow: hidden;
@@ -935,7 +945,7 @@ article {
   padding: 30px 0;
 }
 .blog-content h2 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Montserrat', sans-serif;
 }
 .blog-content h2 a {
   color: #444;
