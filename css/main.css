@@ -19,6 +19,11 @@ h5,
 h6 {
   font-family: 'Montserrat', sans-serif;
 }
+a:active,
+a:visited,
+a:focus {
+	outline: 0;
+}
 p {
   font-family: 'Montserrat', sans-serif;
   line-height: 22px;
@@ -113,7 +118,8 @@ a:hover {
   box-shadow: 0 5px 15px rgba(0,0,0,.2);
   -webkit-box-shadow: 0 5px 15px rgba(0,0,0,.2);
 }
-#top-bar .navbar-nav > li > a:hover {
+#top-bar .navbar-nav > li > a:hover,
+#top-bar .navbar-nav > li > a:focus {
   background: transparent;
 }
 #top-bar.animated-header {
@@ -143,6 +149,10 @@ a:hover {
 }
 #top-bar .main-menu li a:hover {
   //color: #F2B632;
+}
+#top-bar .main-menu li a:visited {
+  outline: 0;
+  background: none;
 }
 .navbar-custom .nav li > a {
   position: relative;
@@ -194,6 +204,12 @@ a:hover {
 }
 #hero-area h3 {
   margin-right: 150px;
+}
+#hero-area p {
+	width: 90%;
+	max-width: 600px;
+	margin: auto;
+	text-indent: 20px;
 }
 #hero-area .btn {
   background: none;
@@ -600,12 +616,15 @@ ul.social-icons li {
   text-decoration: none;
 }
 .global-page-header {
-  background-attachment: fixed;
-  background-size: cover;
-  padding: 120px 0 25px 0;
+  padding: 175px 0 100px 0;
   position: relative;
   background: #02bdd5;
   color: #fff;
+  background: url(../images/mission.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  border-bottom: thick solid #f2b632;
 }
 .global-page-header.activity {
   padding-bottom: 100px;
@@ -615,6 +634,8 @@ ul.social-icons li {
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
+  font-family: Rebel,montserrat,sans-serif;
+  font-size: 6em;
 }
 .global-page-header .breadcrumb {
   background: none;
@@ -622,10 +643,10 @@ ul.social-icons li {
   padding: 8px  0;
 }
 .global-page-header .breadcrumb .active {
-  color: #fff;
+  color: #f2b632;
 }
 .global-page-header .breadcrumb li a {
-  color: #fff;
+  color: #f2b632;
 }
 .global-page-header .block {
   position: relative;
@@ -873,7 +894,8 @@ ul.social-icons li {
   border-radius: 0;
 }
 .company-description {
-  margin-top: 80px;
+  margin-top: 100px;
+  padding-bottom: 50px;
 }
 .company-description .block h3 {
   margin-top: 0;
@@ -919,6 +941,26 @@ ul.social-icons li {
 }
 .about-feature {
   margin-top: 50px;
+  background: url(../images/peer.jpg);
+  background-position: center;
+  padding-top: 8%;
+  padding-bottom: 5%;
+  text-align: center;
+  border-top: thick solid #f2b632;
+  border-bottom: thick solid #f2b632;
+}
+.about-feature i{
+  font-size: 100px;
+  color: rgba(242,182,50,0.8);
+  border: 3px solid;
+  border-radius: 50%;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.about-feature h2{
+  font-family: rebel, montserrat, sans-serif;
+  font-size: 5em;
+  color: rgba(242,182,50,0.9);
 }
 .about-feature .block {
   color: #fff;
@@ -930,13 +972,13 @@ ul.social-icons li {
   font-weight: 300;
 }
 .about-feature .about-feature-1 {
-  background: #02bdd5;
+  background: rgba(0,0,0,0.2);
 }
 .about-feature .about-feature-2 {
-  background: #00B0C7;
+  background: rgba(0,0,0,0.1);
 }
 .about-feature .about-feature-3 {
-  background: #00A6BB;
+  
 }
 #blog-full-width {
   padding: 40px 0 80px;
