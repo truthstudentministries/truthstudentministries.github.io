@@ -14,6 +14,10 @@
       font-weight: normal;
       font-style: normal;
     }
+.wow
+{
+	visibility: hidden;
+}
 body {
   font-family: 'Montserrat', sans-serif;
 }
@@ -29,6 +33,7 @@ a:active,
 a:visited,
 a:focus {
 	outline: 0;
+	text-decoration: none;
 }
 p {
   font-family: 'Montserrat', sans-serif;
@@ -480,6 +485,11 @@ figure figcaption h4 {
 }
 figure figcaption h4 a {
   color: #02bdd5;
+  color: #2B7B8C;
+}
+figure figcaption h4 a:visited {
+  color: #02bdd5;
+  color: #2B7B8C;
 }
 figure figcaption p {
   font-size: 14px;
@@ -681,14 +691,23 @@ ul.social-icons li {
   position: relative;
   background: #02bdd5;
   color: #fff;
+  color: #f2b632;
   background: url(../images/mission.jpg);
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  border-bottom: thick solid #f2b632;
+  border-bottom: thick solid #2b7b8c;
 }
 .global-page-header.activity {
   padding-bottom: 100px;
+}
+.global-page-header.activity#recharge
+{
+  background: url(../images/recharge-header-f.jpg); 
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  border-bottom: thick solid #f2b632;
 }
 .global-page-header h2 {
   font-size: 42px;
@@ -1002,17 +1021,19 @@ ul.social-icons li {
 }
 .about-feature {
   margin-top: 50px;
-  background: url(../images/peer.jpg);
+  background: url(../images/mission.jpg);
   background-position: center;
+  background-attachment: fixed;
   padding-top: 8%;
   padding-bottom: 5%;
   text-align: center;
   border-top: thick solid #f2b632;
-  border-bottom: thick solid #f2b632;
+  border-bottom: thick solid #424242;
 }
 .about-feature i{
-  font-size: 100px;
+  font-size: 75px;
   color: rgba(242,182,50,0.8);
+  color: rgba(255,255,255,0.8);
   border: 3px solid;
   border-radius: 50%;
   padding-left: 15px;
@@ -1022,6 +1043,7 @@ ul.social-icons li {
   font-family: rebel, montserrat, sans-serif;
   font-size: 5em;
   color: rgba(242,182,50,0.9);
+  color: rgba(255,255,255,0.8);
 }
 .about-feature .block {
   color: #fff;
@@ -1167,9 +1189,14 @@ article {
   padding: 0px 0 20px;
   margin-top: -70px;
 }
-
 .portfolio-single p {
 	text-indent: 40px;
+}
+.portfolio-single img {
+	border: thick solid rgb(43, 123, 140);
+}
+.portfolio-single#recharge img {
+	border: thick solid #f2b632;
 }
 .portfolio-single .portfolio-content {
   padding: 40px 0;
