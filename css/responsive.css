@@ -56,11 +56,25 @@ px      68    160    252    */
   .title {
     font-size: 40px;
   }
+  #top-bar
+  {
+    padding: 0px;
+  }
+  .navbar-header .navbar-brand {
+    height: auto;
+  }
   .navbar-header .navbar-brand a {
     padding: 6px 8px;
   }
   #hero-area {
-    padding: 140px 0;
+    height: 100vh;
+  }
+  #hero-area .row
+  {
+      position: absolute;
+      top: 30%;
+      left: 0;
+      right: 0;
   }
   #hero-area .btn {
     margin-top: 8px;
@@ -143,6 +157,14 @@ px      68    160    252    */
   #works figure .buttons{
 	  top: 40%;
   }
+}
+  
+@media only screen and (max-width: 400px) {
+  #hero-area .row
+  {
+      top: 20%;
+  }
+}
 /*		Wide Mobile Layout: 480px.
 		Gutters: 24px.
 		Outer margins: 22px.
