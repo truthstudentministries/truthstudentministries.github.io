@@ -7,6 +7,7 @@
 	yellow   : #f2b632;
 	darkgray : #333;
 	medgray  : #677077;
+	boldblue : #0071D1;
 */
 @font-face {
       font-family: 'Rebel';
@@ -20,6 +21,7 @@
 }
 body {
   font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
 }
 h1,
 h2,
@@ -38,8 +40,9 @@ a:focus {
 p {
   font-family: 'Montserrat', sans-serif;
   line-height: 22px;
-  font-size: 16px;
+  font-size: 1.1em;
   font-weight: 300;
+  padding: 0 5%;
 }
 ul {
   padding-left: 0;
@@ -48,7 +51,13 @@ ul li {
   list-style: none;
 }
 h2 {
-  font-size: 26px;
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.5em;
+}
+h4 {
+  font-size: 1.2em;
 }
 a:hover {
   text-decoration: none;
@@ -58,28 +67,39 @@ a:hover {
   margin-bottom: 65px;
 }
 .section-heading p {
-  font-size: 14px;
+  font-size: 1.1em;
   font-weight: 300;
   color: #757575;
   line-height: 20px;
 }
 .title {
-  font-size: 30px;
+  font-size: 2.3em;
   line-height: 1.1;
   font-weight: 300;
   color: #f2b632;
   text-transform: uppercase;
   margin-bottom: 20px;
 }
+.recharge .subtitle {
+  color: #eee;
+}
+.higher-ground .subtitle{
+  color: #cb4040;	
+}
 .subtitle {
-  font-size: 24px;
   font-weight: 600;
   margin-bottom: 18px;
   text-transform: uppercase;
+  font-size: 2.3em;
+  text-align: center;
+  padding-bottom: 30px;
+}
+.recharge .subtitle-des {
+  color: #f2b632;
 }
 .subtitle-des {
-  color: #727272;
-  font-size: 14px;
+  color: #EEEEEE;
+  font-size: 1.1em;
   margin-bottom: 35px;
   font-weight: 300;
 }
@@ -144,13 +164,13 @@ a:hover {
   color: rgba(255,255,255,0.8);
 }
 #top-bar .main-menu li > a {
-  color: #2B7B8C;
+  color: #424242;
 }
 #top-bar .main-menu li {
   position: relative;
 }
 #top-bar .main-menu li a {
-  font-size: 18px;
+  font-size: 1em;
   font-weight: 700;
   border-bottom: 2px solid transparent;
   -webkit-transition: .3s all;
@@ -203,7 +223,7 @@ a:hover {
   z-index: 999;
 }
 #hero-area h1 {
-  font-size: 7em;
+  font-size: 8em;
   color: #F2B632;
   font-weight: 700;
   font-family: 'Rebel','Montserrat',sans-serif;
@@ -227,8 +247,7 @@ a:hover {
   color: #fff;
   padding: 20px 35px;
   margin-top: 30px;
-  font-size: 16px;
-  font-size: 13px;
+  font-size: .9em;
   line-height: 1em;
   text-transform: uppercase;
   letter-spacing: normal;
@@ -289,20 +308,18 @@ a:hover {
 	background: #f2b632;
 	padding-top: 40px;
 }
-.subtitle
-{
-	font-size: 2.5em;
-	text-align: center;
-	padding-bottom: 30px;
-}
 #call-to-action {
-  background: #F2B632;
+  background: #f2b632;
   background-size: cover;
   background-attachment: fixed;
   padding: 80px 0;
   text-align: center;
   position: relative;
   color: #fff;
+}
+.recharge #call-to-action,
+.higher-ground #call-to-action {
+  background: #fff;
 }
 #call-to-action .block {
   position: relative;
@@ -313,27 +330,44 @@ a:hover {
   margin-bottom: 15px;
   color: #fff;
 }
+.recharge #call-to-action .block h2 {
+  color: #0071d1;
+}
+.higher-ground #call-to-action .block h2 {
+  color: #cb4040;
+}
 #call-to-action .block p {
-  font-size: 15px;
+  font-size: 1em;
   font-weight: 300;
   font-family: 'Montserrat', sans-serif;
   margin-top: 20px;
 }
+.recharge #call-to-action .block p {
+  color: #677077;
+}
+.higher-ground #call-to-action .block p {
+  color: #424242;
+}
 #call-to-action .block .btn-contact {
   background: none;
-  border: thin solid #677077;
   border: thin solid #252839;
-  color: #677077;
   color: #252839;
   padding: 16px 35px;
   margin-top: 20px;
-  font-size: 12px;
+  font-size: .8em;
   letter-spacing: 2px;
   text-transform: uppercase;
   border-radius: 5px;
   transition: all .5s;
 }
-
+.recharge #call-to-action .block .btn-contact {
+  border: thin solid #0071d1;
+  color: #0071d1;
+}
+.higher-ground #call-to-action .block .btn-contact {
+  border: thin solid #cb4040;
+  color: #cb4040;
+}
 #call-to-action .block .btn-contact:hover
 {
 	background: #252839;
@@ -367,6 +401,13 @@ a:hover {
 .works {
   padding: 80px 0;
   background: #FCFCFC;
+  text-align: center;
+}
+.recharge .works {
+  background: #0071D1;
+}
+.higher-ground .works {
+  background: #212121;
 }
 .works .block {
   position: relative;
@@ -410,8 +451,8 @@ a:hover {
 }
 figure {
   background: #fff;
-  margin-bottom: 45px;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.04), 0 2px 10px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
 }
 figure .img-wrapper {
   position: relative;
@@ -483,30 +524,33 @@ figure figcaption h4 {
   margin: 0;
 }
 figure figcaption h4 a {
-  color: #02bdd5;
-  color: #2B7B8C;
+  color: #424242;
 }
-figure figcaption h4 a:visited {
-  color: #02bdd5;
-  color: #2B7B8C;
+.recharge figure figcaption h4 a {
+  color: #0071D1;
+}
+.higher-ground figure figcaption h4 a {
+  color: #cb4040;
 }
 figure figcaption p {
-  font-size: 14px;
+  font-size: .9em;
   margin-bottom: 0;
   margin-top: 5px;
+  padding: 0;
 }
 #feature {
   padding: 80px 0;
 }
 #feature.event-feature {
 	padding: 10px 0 40px 0;
+	background: #eee;
 }
 #feature.event-feature .media {
   margin: 50px 0;
 }
 #feature.event-feature p {
   line-height: 25px;
-  font-size: 18px;
+  font-size: 1.1em;
   color: #777777;
   text-indent: 40px;
 }
@@ -532,19 +576,25 @@ figure figcaption p {
 }
 #feature .icon {
   text-decoration: none;
-  color: #fff;
-  background-color: #2B7B8C;
+  color: #f2b632;
+  background-color: #0071d1;
   height: 100px;
   text-align: center;
   width: 100px;
   font-size: 50px;
   line-height: 100px;
   overflow: hidden;
+  border-radius: 50%;
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
   -ms-border-radius: 50%;
   -o-border-radius: 50%;
-  text-shadow: #1f5d6a 1px 1px, #1f5d6a 2px 2px, #1f5d6a 3px 3px, #1f5d6a 4px 4px, #1f5d6a 5px 5px, #1f5d6a 6px 6px, #1f5d6a 7px 7px, #1f5d6a 8px 8px, #1f5d6a 9px 9px, #1f5d6a 10px 10px, #1f5d6a 11px 11px, #1f5d6a 12px 12px, #1f5d6a 13px 13px, #1f5d6a 14px 14px, #1f5d6a 15px 15px, #1f5d6a 16px 16px, #1f5d6a 17px 17px, #1f5d6a 18px 18px, #1f5d6a 19px 19px, #1f5d6a 20px 20px, #1f5d6a 21px 21px, #1f5d6a 22px 22px, #1f5d6a 23px 23px, #1f5d6a 24px 24px, #1f5d6a 25px 25px, #1f5d6a 26px 26px, #1f5d6a 27px 27px, #1f5d6a 28px 28px, #1f5d6a 29px 29px, #1f5d6a 30px 30px, #1f5d6a 31px 31px, #1f5d6a 32px 32px, #1f5d6a 33px 33px, #1f5d6a 34px 34px, #1f5d6a 35px 35px, #1f5d6a 36px 36px, #1f5d6a 37px 37px, #1f5d6a 38px 38px, #1f5d6a 39px 39px, #1f5d6a 40px 40px, #1f5d6a 41px 41px, #1f5d6a 42px 42px, #1f5d6a 43px 43px, #1f5d6a 44px 44px, #1f5d6a 45px 45px, #1f5d6a 46px 46px, #1f5d6a 47px 47px, #1f5d6a 48px 48px, #1f5d6a 49px 49px, #1f5d6a 50px 50px, #1f5d6a 51px 51px, #1f5d6a 52px 52px, #1f5d6a 53px 53px, #1f5d6a 54px 54px, #1f5d6a 55px 55px, #1f5d6a 56px 56px, #1f5d6a 57px 57px, #1f5d6a 58px 58px, #1f5d6a 59px 59px, #1f5d6a 60px 60px, #1f5d6a 61px 61px, #1f5d6a 62px 62px, #1f5d6a 63px 63px, #1f5d6a 64px 64px, #1f5d6a 65px 65px, #1f5d6a 66px 66px, #1f5d6a 67px 67px, #1f5d6a 68px 68px, #1f5d6a 69px 69px, #1f5d6a 70px 70px, #1f5d6a 71px 71px, #1f5d6a 72px 72px, #1f5d6a 73px 73px, #1f5d6a 74px 74px, #1f5d6a 75px 75px, #1f5d6a 76px 76px, #1f5d6a 77px 77px, #1f5d6a 78px 78px, #1f5d6a 79px 79px, #1f5d6a 80px 80px, #1f5d6a 81px 81px, #1f5d6a 82px 82px, #1f5d6a 83px 83px, #1f5d6a 84px 84px, #1f5d6a 85px 85px, #1f5d6a 86px 86px, #1f5d6a 87px 87px, #1f5d6a 88px 88px, #1f5d6a 89px 89px, #1f5d6a 90px 90px, #1f5d6a 91px 91px, #1f5d6a 92px 92px, #1f5d6a 93px 93px, #1f5d6a 94px 94px, #1f5d6a 95px 95px, #1f5d6a 96px 96px, #1f5d6a 97px 97px, #1f5d6a 98px 98px, #1f5d6a 99px 99px, #1f5d6a 100px 100px;
+  text-shadow: #0067bf 1px 1px, #0067bf 2px 2px, #0067bf 3px 3px, #0067bf 4px 4px, #0067bf 5px 5px, #0067bf 6px 6px, #0067bf 7px 7px, #0067bf 8px 8px, #0067bf 9px 9px, #0067bf 10px 10px, #0067bf 11px 11px, #0067bf 12px 12px, #0067bf 13px 13px, #0067bf 14px 14px, #0067bf 15px 15px, #0067bf 16px 16px, #0067bf 17px 17px, #0067bf 18px 18px, #0067bf 19px 19px, #0067bf 20px 20px, #0067bf 21px 21px, #0067bf 22px 22px, #0067bf 23px 23px, #0067bf 24px 24px, #0067bf 25px 25px, #0067bf 26px 26px, #0067bf 27px 27px, #0067bf 28px 28px, #0067bf 29px 29px, #0067bf 30px 30px, #0067bf 31px 31px, #0067bf 32px 32px, #0067bf 33px 33px, #0067bf 34px 34px, #0067bf 35px 35px, #0067bf 36px 36px, #0067bf 37px 37px, #0067bf 38px 38px, #0067bf 39px 39px, #0067bf 40px 40px, #0067bf 41px 41px, #0067bf 42px 42px, #0067bf 43px 43px, #0067bf 44px 44px, #0067bf 45px 45px, #0067bf 46px 46px, #0067bf 47px 47px, #0067bf 48px 48px, #0067bf 49px 49px, #0067bf 50px 50px, #0067bf 51px 51px, #0067bf 52px 52px, #0067bf 53px 53px, #0067bf 54px 54px, #0067bf 55px 55px, #0067bf 56px 56px, #0067bf 57px 57px, #0067bf 58px 58px, #0067bf 59px 59px, #0067bf 60px 60px, #0067bf 61px 61px, #0067bf 62px 62px, #0067bf 63px 63px, #0067bf 64px 64px, #0067bf 65px 65px, #0067bf 66px 66px, #0067bf 67px 67px, #0067bf 68px 68px, #0067bf 69px 69px, #0067bf 70px 70px, #0067bf 71px 71px, #0067bf 72px 72px, #0067bf 73px 73px, #0067bf 74px 74px, #0067bf 75px 75px, #0067bf 76px 76px, #0067bf 77px 77px, #0067bf 78px 78px, #0067bf 79px 79px, #0067bf 80px 80px, #0067bf 81px 81px, #0067bf 82px 82px, #0067bf 83px 83px, #0067bf 84px 84px, #0067bf 85px 85px, #0067bf 86px 86px, #0067bf 87px 87px, #0067bf 88px 88px, #0067bf 89px 89px, #0067bf 90px 90px, #0067bf 91px 91px, #0067bf 92px 92px, #0067bf 93px 93px, #0067bf 94px 94px, #0067bf 95px 95px, #0067bf 96px 96px, #0067bf 97px 97px, #0067bf 98px 98px, #0067bf 99px 99px, #0067bf 100px 100px;
+}
+.higher-ground #feature .icon {
+  color: #fff;
+  background-color: #cb4040;
+  text-shadow: #ae3636 1px 1px, #ae3636 2px 2px, #ae3636 3px 3px, #ae3636 4px 4px, #ae3636 5px 5px, #ae3636 6px 6px, #ae3636 7px 7px, #ae3636 8px 8px, #ae3636 9px 9px, #ae3636 10px 10px, #ae3636 11px 11px, #ae3636 12px 12px, #ae3636 13px 13px, #ae3636 14px 14px, #ae3636 15px 15px, #ae3636 16px 16px, #ae3636 17px 17px, #ae3636 18px 18px, #ae3636 19px 19px, #ae3636 20px 20px, #ae3636 21px 21px, #ae3636 22px 22px, #ae3636 23px 23px, #ae3636 24px 24px, #ae3636 25px 25px, #ae3636 26px 26px, #ae3636 27px 27px, #ae3636 28px 28px, #ae3636 29px 29px, #ae3636 30px 30px, #ae3636 31px 31px, #ae3636 32px 32px, #ae3636 33px 33px, #ae3636 34px 34px, #ae3636 35px 35px, #ae3636 36px 36px, #ae3636 37px 37px, #ae3636 38px 38px, #ae3636 39px 39px, #ae3636 40px 40px, #ae3636 41px 41px, #ae3636 42px 42px, #ae3636 43px 43px, #ae3636 44px 44px, #ae3636 45px 45px, #ae3636 46px 46px, #ae3636 47px 47px, #ae3636 48px 48px, #ae3636 49px 49px, #ae3636 50px 50px, #ae3636 51px 51px, #ae3636 52px 52px, #ae3636 53px 53px, #ae3636 54px 54px, #ae3636 55px 55px, #ae3636 56px 56px, #ae3636 57px 57px, #ae3636 58px 58px, #ae3636 59px 59px, #ae3636 60px 60px, #ae3636 61px 61px, #ae3636 62px 62px, #ae3636 63px 63px, #ae3636 64px 64px, #ae3636 65px 65px, #ae3636 66px 66px, #ae3636 67px 67px, #ae3636 68px 68px, #ae3636 69px 69px, #ae3636 70px 70px, #ae3636 71px 71px, #ae3636 72px 72px, #ae3636 73px 73px, #ae3636 74px 74px, #ae3636 75px 75px, #ae3636 76px 76px, #ae3636 77px 77px, #ae3636 78px 78px, #ae3636 79px 79px, #ae3636 80px 80px, #ae3636 81px 81px, #ae3636 82px 82px, #ae3636 83px 83px, #ae3636 84px 84px, #ae3636 85px 85px, #ae3636 86px 86px, #ae3636 87px 87px, #ae3636 88px 88px, #ae3636 89px 89px, #ae3636 90px 90px, #ae3636 91px 91px, #ae3636 92px 92px, #ae3636 93px 93px, #ae3636 94px 94px, #ae3636 95px 95px, #ae3636 96px 96px, #ae3636 97px 97px, #ae3636 98px 98px, #ae3636 99px 99px, #ae3636 100px 100px;
 }
 #feature.event-feature .media .media-left {
   display: block;
@@ -576,7 +626,7 @@ figure figcaption p {
   display: block;
   height: 40px;
   padding: 6px 12px;
-  font-size: 13px;
+  font-size: .9em;
   line-height: 1.428571429;
   background-color: #fff;
   background-image: none;
@@ -625,7 +675,7 @@ figure figcaption p {
 #contact-section .address h5,
 #contact-section .email h5,
 #contact-section .phone h5 {
-  font-size: 16px;
+  font-size: .9em;
   line-height: 1.4;
 }
 #contact-section .address-details {
@@ -641,13 +691,19 @@ figure figcaption p {
   padding: 25px 0;
   color: #FFF;
 }
+.higher-ground #footer {
+  background: #212121;
+}
 #footer .copyright {
-  font-size: 13px;
+  font-size: .8em;
   margin-bottom: 0;
   margin-top: 10px;
 }
 #footer .copyright a {
   color: #F2B632;
+}
+.higher-ground #footer .copyright a {
+  color: #cb4040;
 }
 #footer .social {
   text-align: right;
@@ -658,8 +714,12 @@ figure figcaption p {
   margin-right: 15px;
 }
 #footer .social li a {
-  font-size: 22px;
+  font-size: 1.5em;
   color: #F2B632;
+}
+.higher-ground #footer .social li a {
+  font-size: 1.5em;
+  color: #cb4040;
 }
 /*
 .cd-headline.slide .cd-words-wrapper {
@@ -697,10 +757,13 @@ ul.social-icons li {
   background-position: center;
   border-bottom: thick solid #2b7b8c;
 }
+.higher-ground .global-page-header {
+  color: #cb4040;
+}
 .global-page-header.activity {
   padding-bottom: 100px;
 }
-.global-page-header.activity#recharge
+.recharge .global-page-header.activity
 {
   background: url(../images/recharge-header-f.jpg); 
   background-attachment: fixed;
@@ -708,8 +771,15 @@ ul.social-icons li {
   background-size: cover;
   border-bottom: thick solid #f2b632;
 }
+.higher-ground .global-page-header.activity
+{
+  background: url(../images/higher-ground-header.jpg); 
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  border-bottom: thick solid #424242;
+}
 .global-page-header h2 {
-  font-size: 42px;
   font-weight: bold;
   color: #fff;
   text-transform: uppercase;
@@ -718,7 +788,7 @@ ul.social-icons li {
 }
 .global-page-header .breadcrumb {
   background: none;
-  font-size: 16px;
+  font-size: 1em;
   padding: 8px  0;
 }
 .global-page-header .breadcrumb .active {
@@ -917,6 +987,13 @@ ul.social-icons li {
 }
 #clients .owl-carousel .owl-item {
   margin-right: 10px;
+}
+.works .container {
+  padding: 0;
+}
+.works .container .row div {
+  padding-left: 0;
+  padding-right: 0;  
 }
 .works-fit {
   padding: 40px 0;
@@ -1179,7 +1256,7 @@ article {
 .portfolio-meta span {
   margin: 5px 10px;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 1.1em;
 }
 .portfolio-meta span a {
   color: #fff;
@@ -1187,6 +1264,7 @@ article {
 .portfolio-single {
   padding: 0px 0 20px;
   margin-top: -70px;
+  background: #EEE;
 }
 .portfolio-single p {
 	text-indent: 40px;
@@ -1194,8 +1272,11 @@ article {
 .portfolio-single img {
 	border: thick solid rgb(43, 123, 140);
 }
-.portfolio-single#recharge img {
+.recharge .portfolio-single img {
 	border: thick solid #f2b632;
+}
+.higher-ground .portfolio-single img {
+	border: thick solid #424242;
 }
 .portfolio-single .portfolio-content {
   padding: 40px 0;
