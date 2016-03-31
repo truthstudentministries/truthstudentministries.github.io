@@ -8,6 +8,23 @@
 	darkgray : #333;
 	medgray  : #677077;
 	boldblue : #0071D1;
+	
+	RECHARGE:
+	boldblue : #0071D1;
+	
+	HIGHER GROUND:
+	red      : #CB4040;
+	gray     : #333
+	
+	SMALL GROUPS: 
+	blue     : #252839;
+	orange   : #FF9001;
+	skyblue  : #39B7D2;
+	
+	SUNDAY SCHOOL:
+	tan      : #aa863a;
+	lighttorq: #729f98;
+	olive    : #283018;
 */
 @font-face {
       font-family: 'Rebel';
@@ -80,12 +97,6 @@ a:hover {
   text-transform: uppercase;
   margin-bottom: 20px;
 }
-.recharge .subtitle {
-  color: #eee;
-}
-.higher-ground .subtitle{
-  color: #cb4040;	
-}
 .subtitle {
   font-weight: 600;
   margin-bottom: 18px;
@@ -94,14 +105,29 @@ a:hover {
   text-align: center;
   padding-bottom: 30px;
 }
-.recharge .subtitle-des {
-  color: #f2b632;
+.recharge .subtitle {
+  color: #eee;
+}
+.higher-ground .subtitle{
+  color: #cb4040;	
+}
+.small-groups .subtitle{
+  color: #ff9001;	
+}
+.Sunday-school .subtitle{
+  color: #283018;	
 }
 .subtitle-des {
-  color: #EEEEEE;
+  color: #757575;
   font-size: 1.1em;
   margin-bottom: 35px;
   font-weight: 300;
+}
+.recharge .subtitle-des {
+  color: #f2b632;
+}
+.Sunday-school .subtitle-des {
+  color: #EEE;
 }
 .pages {
   padding: 80px 0 40px;
@@ -318,7 +344,9 @@ a:hover {
   color: #fff;
 }
 .recharge #call-to-action,
-.higher-ground #call-to-action {
+.higher-ground #call-to-action,
+.small-groups #call-to-action,
+.Sunday-school #call-to-action  {
   background: #fff;
 }
 #call-to-action .block {
@@ -336,17 +364,23 @@ a:hover {
 .higher-ground #call-to-action .block h2 {
   color: #cb4040;
 }
+.small-groups #call-to-action .block h2 {
+  color: #ff9001;
+}
+.Sunday-school #call-to-action .block h2 {
+  color: #aa863a;
+}
 #call-to-action .block p {
   font-size: 1em;
   font-weight: 300;
   font-family: 'Montserrat', sans-serif;
   margin-top: 20px;
 }
-.recharge #call-to-action .block p {
-  color: #677077;
-}
-.higher-ground #call-to-action .block p {
-  color: #424242;
+.recharge #call-to-action .block p,
+.higher-ground #call-to-action .block p,
+.small-groups #call-to-action .block p,
+.Sunday-school #call-to-action .block p {
+  color: #666;
 }
 #call-to-action .block .btn-contact {
   background: none;
@@ -367,6 +401,14 @@ a:hover {
 .higher-ground #call-to-action .block .btn-contact {
   border: thin solid #cb4040;
   color: #cb4040;
+}
+.small-groups #call-to-action .block .btn-contact {
+  border: thin solid #ff9001;
+  color: #ff9001;
+}
+.Sunday-school #call-to-action .block .btn-contact {
+  border: thin solid #aa863a;
+  color: #aa863a;
 }
 #call-to-action .block .btn-contact:hover
 {
@@ -408,6 +450,12 @@ a:hover {
 }
 .higher-ground .works {
   background: #212121;
+}
+.small-groups .works {
+  background: #252839;
+}
+.Sunday-school .works {
+  background: #729F98;
 }
 .works .block {
   position: relative;
@@ -532,6 +580,9 @@ figure figcaption h4 a {
 .higher-ground figure figcaption h4 a {
   color: #cb4040;
 }
+.small-groups figure figcaption h4 a {
+  color: #ff9001;
+}
 figure figcaption p {
   font-size: .9em;
   margin-bottom: 0;
@@ -592,9 +643,19 @@ figure figcaption p {
   text-shadow: #0067bf 1px 1px, #0067bf 2px 2px, #0067bf 3px 3px, #0067bf 4px 4px, #0067bf 5px 5px, #0067bf 6px 6px, #0067bf 7px 7px, #0067bf 8px 8px, #0067bf 9px 9px, #0067bf 10px 10px, #0067bf 11px 11px, #0067bf 12px 12px, #0067bf 13px 13px, #0067bf 14px 14px, #0067bf 15px 15px, #0067bf 16px 16px, #0067bf 17px 17px, #0067bf 18px 18px, #0067bf 19px 19px, #0067bf 20px 20px, #0067bf 21px 21px, #0067bf 22px 22px, #0067bf 23px 23px, #0067bf 24px 24px, #0067bf 25px 25px, #0067bf 26px 26px, #0067bf 27px 27px, #0067bf 28px 28px, #0067bf 29px 29px, #0067bf 30px 30px, #0067bf 31px 31px, #0067bf 32px 32px, #0067bf 33px 33px, #0067bf 34px 34px, #0067bf 35px 35px, #0067bf 36px 36px, #0067bf 37px 37px, #0067bf 38px 38px, #0067bf 39px 39px, #0067bf 40px 40px, #0067bf 41px 41px, #0067bf 42px 42px, #0067bf 43px 43px, #0067bf 44px 44px, #0067bf 45px 45px, #0067bf 46px 46px, #0067bf 47px 47px, #0067bf 48px 48px, #0067bf 49px 49px, #0067bf 50px 50px, #0067bf 51px 51px, #0067bf 52px 52px, #0067bf 53px 53px, #0067bf 54px 54px, #0067bf 55px 55px, #0067bf 56px 56px, #0067bf 57px 57px, #0067bf 58px 58px, #0067bf 59px 59px, #0067bf 60px 60px, #0067bf 61px 61px, #0067bf 62px 62px, #0067bf 63px 63px, #0067bf 64px 64px, #0067bf 65px 65px, #0067bf 66px 66px, #0067bf 67px 67px, #0067bf 68px 68px, #0067bf 69px 69px, #0067bf 70px 70px, #0067bf 71px 71px, #0067bf 72px 72px, #0067bf 73px 73px, #0067bf 74px 74px, #0067bf 75px 75px, #0067bf 76px 76px, #0067bf 77px 77px, #0067bf 78px 78px, #0067bf 79px 79px, #0067bf 80px 80px, #0067bf 81px 81px, #0067bf 82px 82px, #0067bf 83px 83px, #0067bf 84px 84px, #0067bf 85px 85px, #0067bf 86px 86px, #0067bf 87px 87px, #0067bf 88px 88px, #0067bf 89px 89px, #0067bf 90px 90px, #0067bf 91px 91px, #0067bf 92px 92px, #0067bf 93px 93px, #0067bf 94px 94px, #0067bf 95px 95px, #0067bf 96px 96px, #0067bf 97px 97px, #0067bf 98px 98px, #0067bf 99px 99px, #0067bf 100px 100px;
 }
 .higher-ground #feature .icon {
-  color: #fff;
+  color: #333;
   background-color: #cb4040;
   text-shadow: #ae3636 1px 1px, #ae3636 2px 2px, #ae3636 3px 3px, #ae3636 4px 4px, #ae3636 5px 5px, #ae3636 6px 6px, #ae3636 7px 7px, #ae3636 8px 8px, #ae3636 9px 9px, #ae3636 10px 10px, #ae3636 11px 11px, #ae3636 12px 12px, #ae3636 13px 13px, #ae3636 14px 14px, #ae3636 15px 15px, #ae3636 16px 16px, #ae3636 17px 17px, #ae3636 18px 18px, #ae3636 19px 19px, #ae3636 20px 20px, #ae3636 21px 21px, #ae3636 22px 22px, #ae3636 23px 23px, #ae3636 24px 24px, #ae3636 25px 25px, #ae3636 26px 26px, #ae3636 27px 27px, #ae3636 28px 28px, #ae3636 29px 29px, #ae3636 30px 30px, #ae3636 31px 31px, #ae3636 32px 32px, #ae3636 33px 33px, #ae3636 34px 34px, #ae3636 35px 35px, #ae3636 36px 36px, #ae3636 37px 37px, #ae3636 38px 38px, #ae3636 39px 39px, #ae3636 40px 40px, #ae3636 41px 41px, #ae3636 42px 42px, #ae3636 43px 43px, #ae3636 44px 44px, #ae3636 45px 45px, #ae3636 46px 46px, #ae3636 47px 47px, #ae3636 48px 48px, #ae3636 49px 49px, #ae3636 50px 50px, #ae3636 51px 51px, #ae3636 52px 52px, #ae3636 53px 53px, #ae3636 54px 54px, #ae3636 55px 55px, #ae3636 56px 56px, #ae3636 57px 57px, #ae3636 58px 58px, #ae3636 59px 59px, #ae3636 60px 60px, #ae3636 61px 61px, #ae3636 62px 62px, #ae3636 63px 63px, #ae3636 64px 64px, #ae3636 65px 65px, #ae3636 66px 66px, #ae3636 67px 67px, #ae3636 68px 68px, #ae3636 69px 69px, #ae3636 70px 70px, #ae3636 71px 71px, #ae3636 72px 72px, #ae3636 73px 73px, #ae3636 74px 74px, #ae3636 75px 75px, #ae3636 76px 76px, #ae3636 77px 77px, #ae3636 78px 78px, #ae3636 79px 79px, #ae3636 80px 80px, #ae3636 81px 81px, #ae3636 82px 82px, #ae3636 83px 83px, #ae3636 84px 84px, #ae3636 85px 85px, #ae3636 86px 86px, #ae3636 87px 87px, #ae3636 88px 88px, #ae3636 89px 89px, #ae3636 90px 90px, #ae3636 91px 91px, #ae3636 92px 92px, #ae3636 93px 93px, #ae3636 94px 94px, #ae3636 95px 95px, #ae3636 96px 96px, #ae3636 97px 97px, #ae3636 98px 98px, #ae3636 99px 99px, #ae3636 100px 100px;
+}
+.small-groups #feature .icon {
+  color: #252839;
+  background-color: #ff9001;
+  text-shadow: #e78301 1px 1px, #e78301 2px 2px, #e78301 3px 3px, #e78301 4px 4px, #e78301 5px 5px, #e78301 6px 6px, #e78301 7px 7px, #e78301 8px 8px, #e78301 9px 9px, #e78301 10px 10px, #e78301 11px 11px, #e78301 12px 12px, #e78301 13px 13px, #e78301 14px 14px, #e78301 15px 15px, #e78301 16px 16px, #e78301 17px 17px, #e78301 18px 18px, #e78301 19px 19px, #e78301 20px 20px, #e78301 21px 21px, #e78301 22px 22px, #e78301 23px 23px, #e78301 24px 24px, #e78301 25px 25px, #e78301 26px 26px, #e78301 27px 27px, #e78301 28px 28px, #e78301 29px 29px, #e78301 30px 30px, #e78301 31px 31px, #e78301 32px 32px, #e78301 33px 33px, #e78301 34px 34px, #e78301 35px 35px, #e78301 36px 36px, #e78301 37px 37px, #e78301 38px 38px, #e78301 39px 39px, #e78301 40px 40px, #e78301 41px 41px, #e78301 42px 42px, #e78301 43px 43px, #e78301 44px 44px, #e78301 45px 45px, #e78301 46px 46px, #e78301 47px 47px, #e78301 48px 48px, #e78301 49px 49px, #e78301 50px 50px, #e78301 51px 51px, #e78301 52px 52px, #e78301 53px 53px, #e78301 54px 54px, #e78301 55px 55px, #e78301 56px 56px, #e78301 57px 57px, #e78301 58px 58px, #e78301 59px 59px, #e78301 60px 60px, #e78301 61px 61px, #e78301 62px 62px, #e78301 63px 63px, #e78301 64px 64px, #e78301 65px 65px, #e78301 66px 66px, #e78301 67px 67px, #e78301 68px 68px, #e78301 69px 69px, #e78301 70px 70px, #e78301 71px 71px, #e78301 72px 72px, #e78301 73px 73px, #e78301 74px 74px, #e78301 75px 75px, #e78301 76px 76px, #e78301 77px 77px, #e78301 78px 78px, #e78301 79px 79px, #e78301 80px 80px, #e78301 81px 81px, #e78301 82px 82px, #e78301 83px 83px, #e78301 84px 84px, #e78301 85px 85px, #e78301 86px 86px, #e78301 87px 87px, #e78301 88px 88px, #e78301 89px 89px, #e78301 90px 90px, #e78301 91px 91px, #e78301 92px 92px, #e78301 93px 93px, #e78301 94px 94px, #e78301 95px 95px, #e78301 96px 96px, #e78301 97px 97px, #e78301 98px 98px, #e78301 99px 99px, #e78301 100px 100px;
+}
+.Sunday-school #feature .icon {
+  color: #e0c58b;
+  background-color: #729f98;
+  text-shadow: #608781 1px 1px, #608781 2px 2px, #608781 3px 3px, #608781 4px 4px, #608781 5px 5px, #608781 6px 6px, #608781 7px 7px, #608781 8px 8px, #608781 9px 9px, #608781 10px 10px, #608781 11px 11px, #608781 12px 12px, #608781 13px 13px, #608781 14px 14px, #608781 15px 15px, #608781 16px 16px, #608781 17px 17px, #608781 18px 18px, #608781 19px 19px, #608781 20px 20px, #608781 21px 21px, #608781 22px 22px, #608781 23px 23px, #608781 24px 24px, #608781 25px 25px, #608781 26px 26px, #608781 27px 27px, #608781 28px 28px, #608781 29px 29px, #608781 30px 30px, #608781 31px 31px, #608781 32px 32px, #608781 33px 33px, #608781 34px 34px, #608781 35px 35px, #608781 36px 36px, #608781 37px 37px, #608781 38px 38px, #608781 39px 39px, #608781 40px 40px, #608781 41px 41px, #608781 42px 42px, #608781 43px 43px, #608781 44px 44px, #608781 45px 45px, #608781 46px 46px, #608781 47px 47px, #608781 48px 48px, #608781 49px 49px, #608781 50px 50px, #608781 51px 51px, #608781 52px 52px, #608781 53px 53px, #608781 54px 54px, #608781 55px 55px, #608781 56px 56px, #608781 57px 57px, #608781 58px 58px, #608781 59px 59px, #608781 60px 60px, #608781 61px 61px, #608781 62px 62px, #608781 63px 63px, #608781 64px 64px, #608781 65px 65px, #608781 66px 66px, #608781 67px 67px, #608781 68px 68px, #608781 69px 69px, #608781 70px 70px, #608781 71px 71px, #608781 72px 72px, #608781 73px 73px, #608781 74px 74px, #608781 75px 75px, #608781 76px 76px, #608781 77px 77px, #608781 78px 78px, #608781 79px 79px, #608781 80px 80px, #608781 81px 81px, #608781 82px 82px, #608781 83px 83px, #608781 84px 84px, #608781 85px 85px, #608781 86px 86px, #608781 87px 87px, #608781 88px 88px, #608781 89px 89px, #608781 90px 90px, #608781 91px 91px, #608781 92px 92px, #608781 93px 93px, #608781 94px 94px, #608781 95px 95px, #608781 96px 96px, #608781 97px 97px, #608781 98px 98px, #608781 99px 99px, #608781 100px 100px;
 }
 #feature.event-feature .media .media-left {
   display: block;
@@ -705,6 +766,12 @@ figure figcaption p {
 .higher-ground #footer .copyright a {
   color: #cb4040;
 }
+.small-groups #footer .copyright a {
+  color: #ff9001;
+}
+.Sunday-school #footer .copyright a {
+  color: #729f98;
+}
 #footer .social {
   text-align: right;
   margin-bottom: 0;
@@ -718,8 +785,13 @@ figure figcaption p {
   color: #F2B632;
 }
 .higher-ground #footer .social li a {
-  font-size: 1.5em;
   color: #cb4040;
+}
+.small-groups #footer .social li a {
+  color: #ff9001;
+}
+.Sunday-school #footer .social li a {
+  color: #729f98;
 }
 /*
 .cd-headline.slide .cd-words-wrapper {
@@ -760,6 +832,12 @@ ul.social-icons li {
 .higher-ground .global-page-header {
   color: #cb4040;
 }
+.small-groups .global-page-header {
+  color: #ff9001;
+}
+.Sunday-school .global-page-header {
+  color: #729f98;
+}
 .global-page-header.activity {
   padding-bottom: 100px;
 }
@@ -778,6 +856,22 @@ ul.social-icons li {
   background-position: bottom;
   background-size: cover;
   border-bottom: thick solid #424242;
+}
+.small-groups .global-page-header.activity
+{
+  background: url(../images/small-group-header.jpg); 
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  border-bottom: thick solid #ff9001;
+}
+.Sunday-school .global-page-header.activity
+{
+  background: url(../images/Sunday-school-header.jpg); 
+  background-attachment: fixed;
+  background-position: bottom;
+  background-size: cover;
+  border-bottom: thick solid #729f98;
 }
 .global-page-header h2 {
   font-weight: bold;
@@ -1278,6 +1372,12 @@ article {
 .higher-ground .portfolio-single img {
 	border: thick solid #424242;
 }
+.small-groups .portfolio-single img {
+	border: thick solid #ff9001;
+}
+.Sunday-school .portfolio-single img {
+	border: thick solid #729f98;
+}
 .portfolio-single .portfolio-content {
   padding: 40px 0;
 }
@@ -1332,7 +1432,7 @@ article {
   display: inline-block;
 }
 .navbar-toggle .icon-bar {
-  background: #2B7B8C;
+  background: #424242;
   width: 25px;
   height: 3px;
 }
