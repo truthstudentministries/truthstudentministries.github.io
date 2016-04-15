@@ -1,7 +1,14 @@
 /* Responsive styles
 ================================================== */
 /* Large Devices, Wide Screens */
+@media (min-width: 1600px) {
+   body {
+	   font-size: 18px;
+   }
+}
+
 @media (min-width: 1200px) {
+
   /* Dropdown animation */
   .navbar-nav .dropdown-menu,
   .navbar-nav .dropdown.megamenu div.dropdown-menu {
@@ -38,6 +45,15 @@
     visibility: hidden;
   }
 }
+
+@media only screen and (max-width: 991px) {
+	#contact-section .address h5, 
+	#contact-section .email h5, 
+	#contact-section .phone h5 {
+	  font-size: 1em;	
+	}
+}
+
 /*		Tablet Layout: 768px.
 		Gutters: 24px.
 		Outer margins: 28px.
@@ -56,11 +72,25 @@ px      68    160    252    */
   .title {
     font-size: 40px;
   }
+  #top-bar
+  {
+    padding: 0px;
+  }
+  .navbar-header .navbar-brand {
+    height: auto;
+  }
   .navbar-header .navbar-brand a {
     padding: 6px 8px;
   }
   #hero-area {
-    padding: 140px 0;
+    height: 100vh;
+  }
+  #hero-area .row
+  {
+      position: absolute;
+      top: 30%;
+      left: 0;
+      right: 0;
   }
   #hero-area .btn {
     margin-top: 8px;
@@ -72,7 +102,7 @@ px      68    160    252    */
     padding: 0;
   }
   figure .buttons {
-    left: 16%;
+    top: 45%;
   }
   #feature .media {
     margin: 0px 0px 35px;
@@ -132,6 +162,45 @@ px      68    160    252    */
     padding: 15px;
     color: #333;
     border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+  #top-bar.animated-header .dropdown-menu  ul > li > a{
+	color: #424242;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) { 
+  #works figure .buttons{
+	  top: 40%;
+  }
+}
+  
+@media only screen and (max-width: 400px) {
+  body {
+	font-size: 14px;
+  }
+  .hero-area {
+    text-align: center;
+  }
+  .hero-area h1 {
+	font-size: 7em; 
+  }
+  .hero-area h3 {
+    margin-right: 80px;
+  }
+  .hero-area h2 {
+    font-size: 1.5em;
+  }
+  .hero-area .btn {
+	padding: 15px;
+  }
+  .hero-area .row{
+    top: 20%;
+  }
+  .global-page-header h2 {
+	  font-size: 4em;
+  }
+  figure .buttons{
+	top: 40%;
   }
 }
 /*		Wide Mobile Layout: 480px.
