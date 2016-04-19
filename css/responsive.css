@@ -178,7 +178,6 @@ px      68    160    252    */
   body {
 	font-size: 14px;
   }
-<<<<<<< HEAD
   .hero-area {
     text-align: center;
   }
@@ -195,21 +194,6 @@ px      68    160    252    */
 	padding: 15px;
   }
   .hero-area .row{
-=======
-  #hero-area h1 {
-	font-size: 6em; 
-  }
-  #hero-area h3 {
-    margin-right: 80px;
-  }
-  #hero-area h2 {
-    font-size: 1.5em;
-  }
-  #hero-area .btn {
-	padding: 15px;  
-  }
-  #hero-area .row{
->>>>>>> origin/master
     top: 20%;
   }
   .global-page-header h2 {
