@@ -1,6 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Chivo+Handgloves);
 @import url(https://fonts.googleapis.com/css?family=Lato:400,700,900);
-@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,700);
 
 /*--------------SECTIONS WITH ACTIVITY GRAPHICS--------*/
 
@@ -221,12 +221,13 @@ a:hover {
   //background: #ffffff;
   //box-shadow: 0 5px 15px rgba(0,0,0,.2);
   box-shadow: none;
+  border-bottom: none;
 }
 #top-bar.animated-header  .main-menu li > a{
   color: rgba(255,255,255,0.8);
 }
 #top-bar .main-menu li > a {
-  color: #424242;
+  color: #5a2238;
 }
 #top-bar .main-menu li {
   position: relative;
@@ -372,13 +373,16 @@ a:hover {
 	opacity: .7;
 }
 #event-flash-container {
-	background: #212121;
-	height: 40px;
+	background: #5a2238;
 	position: fixed;
 	top: 0;
 	width: 100%;
-	z-index: 10;
-	
+	z-index: 100;
+	border-bottom: 3px solid #5a2238;
+	background: -webkit-linear-gradient(left, #171c44 , #5a2238); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #171c44, #5a2238); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #171c44, #5a2238); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #171c44 , #5a2238); /* Standard syntax */
 }
 #event-flash {
 	//background: #333;
@@ -387,15 +391,91 @@ a:hover {
 	text-align: center;
 	font-size: 1.1em;
 	color: #d32127;
-	color: #f2b632;
+	color: #fff;
 }
 #service-page
 {
 	background: #fff;
 	padding-top: 40px;
 }
+#info-section {
+	background: 5a2238; /* For browsers that do not support gradients */
+	background: -webkit-linear-gradient(left, #171c44 , #5a2238); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #171c44, #5a2238); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #171c44, #5a2238); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #171c44 , #5a2238); /* Standard syntax */
+	background: url('../images/peerG.jpg');
+    background-size: cover;
+    background-position: center;
+}
+}
+#info-section .vertical-align {
+	height: 180px;
+	display: inline-block;
+	width: 100%;
+}
+#info-section .left {
+	//background: #5a2238;
+	height: 350px;
+	text-align: center;
+	display: table;
+	margin: auto;
+}
+#info-section .left i{
+	font-size: 100px;
+	color: #fff;
+}
+#info-section .left h1 {
+	font-size: 75px;
+	font-weight: 900;
+	text-transform: uppercase;
+	color: white;
+	margin-bottom: -20px;
+}
+#info-section .left h2 {
+	color: rgba(255, 255, 255, 0.9);
+	margin-bottom: -35px;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+#info-section .right {
+	//background: url('../images/peerG.jpg');
+    //background-size: cover;
+    //background-position: center;
+	height: 350px;
+	padding: 20px;
+	display: table;
+}
+#info-section .vertical-align{
+	display: table-cell;
+	vertical-align: middle;
+}
+#info-section .right p i{
+	font-size: 1.5em;
+	color: rgb(238, 238, 238);
+	display: inline-block;
+	padding-right: 20px;
+}
+#info-section .right #close-quote{
+	transform: rotate(180deg);
+}
+#info-section .right p{
+	color: rgb(255, 255, 255);
+	font-size: 1.5em;
+	font-weight: 500;
+	line-height: 1.5em;
+	text-align: center;
+	font-style: italic;
+}
+#info-section .right h3{
+	color: rgb(255, 255, 255);
+	font-size: 1em;
+	font-weight: 300;
+	line-height: 1.5em;
+	text-align: center;
+}
 #call-to-action {
-  background: #fff;
+  background: #171c44;
   background-size: cover;
   background-attachment: fixed;
   padding: 80px 0;
@@ -416,7 +496,13 @@ a:hover {
 }
 #call-to-action .block h2 {
   margin-bottom: 15px;
-  color: #97282c;
+  color: #fff;
+}
+#call-to-action .block #newsemail {
+  width: 80%;
+  max-width: 400px;
+  margin: auto;
+  margin-top: 50px;
 }
 .recharge #call-to-action .block h2 {
   color: #0071d1;
@@ -435,7 +521,7 @@ a:hover {
   font-weight: 300;
   font-family: 'Montserrat', sans-serif;
   margin-top: 20px;
-  color: #5a2238;
+  color: #bdbdbd;
 }
 .recharge #call-to-action .block p,
 .higher-ground #call-to-action .block p,
@@ -445,8 +531,8 @@ a:hover {
 }
 #call-to-action .block .btn-contact {
   background: none;
-  border: thin solid #97282c;
-  color: #97282c;
+  border: thin solid #fff;
+  color: #fff;
   padding: 16px 35px;
   margin-top: 20px;
   font-size: .8em;
@@ -473,8 +559,8 @@ a:hover {
 }
 #call-to-action .block .btn-contact:hover
 {
-	background: #5a2238;
-	color: #E0E0E0;
+	background: #fff;
+	color: #171c44;
 }
 
 #call-to-action .block .btn-contact i {
@@ -503,7 +589,7 @@ a:hover {
 }
 .works {
   padding: 80px 0;
-  background: #062F4F;
+  background: #fff;
   text-align: center;
 }
 .recharge .works {
@@ -633,7 +719,7 @@ figure figcaption h4 {
   margin: 0;
 }
 figure figcaption h4 a {
-  color: #424242;
+  color: #062F4F;
 }
 .recharge figure figcaption h4 a {
   color: #0071D1;
@@ -832,20 +918,29 @@ figure figcaption p {
   background-color: #CCC;
 }
 #footer {
-  background: #677077;
-  padding: 25px 0;
+  background: #EEE;
+  padding-bottom: 25px;
   color: #FFF;
+  text-align: center;
 }
 .higher-ground #footer {
   background: #212121;
 }
 #footer .copyright {
-  font-size: .8em;
+  font-size: 1em;
   margin-bottom: 0;
   margin-top: 10px;
+  color: #757575;
 }
 #footer .copyright a {
-  color: #F2B632;
+  color: #333;
+}
+#footer #insta-header {
+	width: 50%;
+	max-width: 200px;
+	display: block;
+	margin: auto;
+	padding-bottom: 20px;
 }
 .higher-ground #footer .copyright a {
   color: #cb4040;
@@ -859,14 +954,23 @@ figure figcaption p {
 #footer .social {
   text-align: right;
   margin-bottom: 0;
+  text-align: center;
 }
 #footer .social li {
   display: inline-block;
-  margin-right: 15px;
+  margin-right: 2.5%;
+  margin-left: 2.5%;
 }
 #footer .social li a {
-  font-size: 1.5em;
-  color: #F2B632;
+  font-size: 2.5em;
+  color: #757575;
+}
+#footer .row {
+	background: #fff;
+	padding: 25px 0;
+}
+#footer .container {
+	padding-top: 25px;
 }
 .higher-ground #footer .social li a {
   color: #cb4040;
@@ -911,7 +1015,7 @@ ul.social-icons li {
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
-  border-bottom: thick solid #2b7b8c;
+  border-bottom: thick solid #5a2238;
 }
 .higher-ground .global-page-header {
   color: #cb4040;
@@ -970,10 +1074,10 @@ ul.social-icons li {
   padding: 8px  0;
 }
 .global-page-header .breadcrumb .active {
-  color: #f2b632;
+  color: #fff;
 }
 .global-page-header .breadcrumb li a {
-  color: #f2b632;
+  color: #fff;
 }
 .global-page-header .block {
   position: relative;
@@ -1145,7 +1249,7 @@ ul.social-icons li {
   color: #5a2238;
 }
 .service-page .service-parts .block h3 {
-  color: #062F4F;
+  color: #5a2238;
 }
 .service-page .service-parts .block p {
   padding: 0 8px;
@@ -1524,7 +1628,7 @@ article {
   height: 3px;
 }
 .navbar-toggle {
-  margin-top: 15px;
+  margin-top: 0px;
   background: #E0E0E0;
 }
 .dropdown-menu > ul {
