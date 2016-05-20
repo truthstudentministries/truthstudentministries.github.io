@@ -207,6 +207,12 @@ px      68    160    252    */
 		margin: auto;
 	}
 }
+@media only screen and (max-width: 650px) {
+	#music-section #spotify-side div {
+		display: block;
+		width: 100%;
+	}
+}
 @media only screen and (max-width: 550px) {
 	#top-bar {
 		background: none;

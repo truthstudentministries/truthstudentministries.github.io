@@ -139,8 +139,11 @@ a:hover {
   padding-bottom: 30px;
   color: #5a2238;
 }
-.recharge .subtitle {
-  color: #eee;
+.recharge .works .subtitle {
+  color: #0071D1;
+}
+.recharge .service-page .subtitle {
+  color: #fff;
 }
 .higher-ground .subtitle{
   color: #cb4040;	
@@ -157,11 +160,12 @@ a:hover {
   margin-bottom: 35px;
   font-weight: 300;
 }
-.recharge .subtitle-des {
-  color: #f2b632;
+.recharge .subtitle-des,
+.small-groups .subtitle-des  {
+  color: #757575;
 }
 .Sunday-school .subtitle-des {
-  color: #EEE;
+  color: #757575;
 }
 .pages {
   padding: 80px 0 40px;
@@ -229,9 +233,6 @@ a:hover {
 #top-bar .main-menu li > a {
   color: #5a2238;
 }
-#top-bar .main-menu li {
-  position: relative;
-}
 #top-bar .main-menu li a {
   font-size: 1em;
   font-weight: 700;
@@ -240,6 +241,39 @@ a:hover {
   -o-transition: .3s all;
   transition: .3s all;
   text-transform: uppercase;
+}
+.recharge #top-bar.animated-header  .main-menu li > a,
+.small-groups #top-bar.animated-header  .main-menu li > a,
+.Sunday-school #top-bar.animated-header  .main-menu li > a,
+.higher-ground #top-bar.animated-header  .main-menu li > a{
+  color: rgba(255,255,255,0.8);
+}
+.recharge #top-bar .main-menu li > a {
+  color: #0071d1;
+}
+.higher-ground #top-bar .main-menu li > a {
+  color: #424242;
+}
+.higher-ground #top-bar .dropdown-menu > ul > li > a {
+  color: #fff;
+}
+.small-groups #top-bar .main-menu li > a {
+  color: #252839;
+}
+.small-groups #top-bar .dropdown-menu > ul > li > a {
+  color: #fff;
+}
+.Sunday-school #top-bar .main-menu li > a {
+  color: #283018;
+}
+.Sunday-school #top-bar .dropdown-menu > ul > li > a {
+  color: #fff;
+}
+#top-bar .main-menu li > a {
+  color: #5a2238;
+}
+#top-bar .main-menu li {
+  position: relative;
 }
 #top-bar .main-menu li a:hover {
   //color: #F2B632;
@@ -384,6 +418,34 @@ a:hover {
 	background: -moz-linear-gradient(right, #171c44, #5a2238); /* For Firefox 3.6 to 15 */
 	background: linear-gradient(to right, #171c44 , #5a2238); /* Standard syntax */
 }
+.recharge #event-flash-container {
+	border-bottom: 3px solid #f2b632;
+	background: -webkit-linear-gradient(left, #f2b632 , #0071d1); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #f2b632, #0071d1); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #f2b632, #0071d1); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #f2b632 , #0071d1); /* Standard syntax */
+}
+.higher-ground #event-flash-container {
+	border-bottom: 3px solid #cb4040;
+	background: -webkit-linear-gradient(left, #424242 , #cb4040); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #424242, #cb4040); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #424242, #cb4040); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #424242 , #cb4040); /* Standard syntax */
+}
+.small-groups #event-flash-container {
+	border-bottom: 3px solid #FF9001;
+	background: -webkit-linear-gradient(left, #171c44 , #FF9001); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #171c44, #FF9001); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #171c44, #FF9001); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #171c44 , #FF9001); /* Standard syntax */
+}
+.Sunday-school #event-flash-container {
+	border-bottom: 3px solid #729f98;
+	background: -webkit-linear-gradient(left, #171c44, #729f98); /* For Safari 5.1 to 6.0 */
+	background: -o-linear-gradient(right, #171c44, #729f98); /* For Opera 11.1 to 12.0 */
+	background: -moz-linear-gradient(right, #171c44, #729f98); /* For Firefox 3.6 to 15 */
+	background: linear-gradient(to right, #171c44, #729f98); /* Standard syntax */
+}
 #event-flash {
 	//background: #333;
 	padding: 10px;
@@ -393,10 +455,21 @@ a:hover {
 	color: #d32127;
 	color: #fff;
 }
-#service-page
-{
+#service-page {
 	background: #fff;
 	padding-top: 40px;
+}
+.recharge #service-page {
+	background: #0071d1;
+}
+.higher-ground #service-page {
+	background: #212121;
+}
+.small-groups #service-page {
+	background: #171c44;
+}
+.Sunday-school #service-page {
+	background: #e0c58b;
 }
 #info-section {
 	background: 5a2238; /* For browsers that do not support gradients */
@@ -483,11 +556,20 @@ a:hover {
   position: relative;
   color: #fff;
 }
-.recharge #call-to-action,
-.higher-ground #call-to-action,
-.small-groups #call-to-action,
 .Sunday-school #call-to-action  {
   background: #fff;
+}
+.recharge #call-to-action {
+	background: #f2b632;
+}
+.higher-ground #call-to-action {
+	background: #cb4040;
+}
+.small-groups #call-to-action {
+	background: #ff9001;
+}
+.Sunday-school #call-to-action {
+	background: #729f98;
 }
 #call-to-action .block {
   position: relative;
@@ -505,16 +587,16 @@ a:hover {
   margin-top: 50px;
 }
 .recharge #call-to-action .block h2 {
-  color: #0071d1;
+  color: #fff;
 }
 .higher-ground #call-to-action .block h2 {
-  color: #cb4040;
+  color: #fff;
 }
 .small-groups #call-to-action .block h2 {
-  color: #ff9001;
+  color: #fff;
 }
 .Sunday-school #call-to-action .block h2 {
-  color: #aa863a;
+  color: #fff;
 }
 #call-to-action .block p {
   font-size: 1em;
@@ -523,13 +605,20 @@ a:hover {
   margin-top: 20px;
   color: #bdbdbd;
 }
-.recharge #call-to-action .block p,
-.higher-ground #call-to-action .block p,
-.small-groups #call-to-action .block p,
-.Sunday-school #call-to-action .block p {
-  color: #666;
+.small-groups #call-to-action .block p {
+  color: #fff;
 }
-#call-to-action .block .btn-contact {
+.Sunday-school #call-to-action .block p {
+  color: #eee;
+}
+.recharge #call-to-action .block p {
+	color: #eee;
+}
+.higher-ground #call-to-action .block p {
+	color: #e0e0e0;
+}
+#call-to-action .block .btn-contact,
+#contact-section .contact-form .btn-send {
   background: none;
   border: thin solid #fff;
   color: #fff;
@@ -542,27 +631,41 @@ a:hover {
   transition: all .5s;
 }
 .recharge #call-to-action .block .btn-contact {
-  border: thin solid #0071d1;
-  color: #0071d1;
+  border: thin solid #fff;
+  color: #fff;
 }
 .higher-ground #call-to-action .block .btn-contact {
-  border: thin solid #cb4040;
-  color: #cb4040;
+  border: thin solid #fff;
+  color: #fff;
 }
 .small-groups #call-to-action .block .btn-contact {
-  border: thin solid #ff9001;
-  color: #ff9001;
+  border: thin solid #fff;
+  color: #fff;
 }
 .Sunday-school #call-to-action .block .btn-contact {
-  border: thin solid #aa863a;
-  color: #aa863a;
+  border: thin solid #fff;
+  color: #fff;
 }
-#call-to-action .block .btn-contact:hover
-{
-	background: #fff;
-	color: #171c44;
+#call-to-action .block .btn-contact:hover {
+  background: #fff;
+  color: #171c44;
 }
-
+.higher-ground #call-to-action .block .btn-contact:hover {
+  background: #fff;
+  color: #cb4040;
+}
+.small-groups #call-to-action .block .btn-contact:hover {
+  background: #fff;
+  color: #ff9001;
+}
+.Sunday-school #call-to-action .block .btn-contact:hover {
+  background: #fff;
+  color: #729f98;
+}
+#call-to-action .block .btn-contact:hover {
+  background: #fff;
+  color: #171c44;
+}
 #call-to-action .block .btn-contact i {
   margin-right: 10px;
 }
@@ -592,17 +695,12 @@ a:hover {
   background: #fff;
   text-align: center;
 }
-.recharge .works {
-  background: #0071D1;
-}
-.higher-ground .works {
-  background: #212121;
-}
-.small-groups .works {
-  background: #252839;
-}
-.Sunday-school .works {
-  background: #729F98;
+.recharge .works,
+.higher-ground .works,
+.small-groups .works,
+.Sunday-school .works
+ {
+  background: #fff;
 }
 .works .block {
   position: relative;
@@ -648,6 +746,7 @@ figure {
   background: #fff;
   box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.04), 0 2px 10px 0 rgba(0, 0, 0, 0.06);
   margin-bottom: 20px;
+  border: thin solid #EEE;
 }
 figure .img-wrapper {
   position: relative;
@@ -669,6 +768,9 @@ figure:hover .overlay {
 figure:hover .overlay .buttons a {
   -webkit-transform: scale3d(1, 1, 1);
   transform: scale3d(1, 1, 1);
+}
+figure:hover {
+	background: #FEFEFE;
 }
 figure .overlay {
   position: absolute;
@@ -714,6 +816,7 @@ figure figcaption {
   padding: 20px 25px;
   margin-top: 0;
   color: #666;
+  text-align: center;
 }
 figure figcaption h4 {
   margin: 0;
@@ -729,6 +832,9 @@ figure figcaption h4 a {
 }
 .small-groups figure figcaption h4 a {
   color: #ff9001;
+}
+.Sunday-school figure figcaption h4 a {
+  color: #283018;
 }
 figure figcaption p {
   font-size: .9em;
@@ -816,24 +922,40 @@ figure figcaption p {
 	display: inline-block;
 }
 #music figure figcaption h4 a {
-    color: #FFF;
+    color: #212121;
 }
 #music figure figcaption {
-    background: rgba(0,0,0,0.8);
+    
+}
+#music .global-page-header {
+	background: url('../images/music-header.jpg');
+	background-attachment: fixed;
+	background-position: bottom;
+	background-size: cover;
 }
 #music .img-wrapper {
-    background: rgba(0,0,0,0.8);
 }
 #music .img-wrapper img{
-    width: 80%;
-    padding-top: 20px;
 }
-#music-section #spotify {
-  background: #424242;
+#music #links {
+	padding-top: 40px;
+	padding-bottom: 40px;
+}
+#music-section #spotify-side {
+	padding-top: 40px;
+	padding-bottom: 20px;
+}
+#music-section #spotify-side div{
+	margin: auto;
+	text-align: center;
+}
+#music-section .youtube div {
+
 }
 #music-section .container {
   width: 100%;
-  max-width: 1400px;
+  padding-left: 0px;
+  padding-right: 0px;
 }
 #music-section .row div {
   text-align: center;
@@ -845,13 +967,15 @@ figure figcaption p {
   margin-top: 42px;
 }
 #contact-section .contact-form .btn-send {
-  margin-top: 35px;
-  color: #fff;
+  color: #5a2238;
   outline: none;
-  background: #02bdd5;
+  background: #fff;
+  padding: 0 20px;
+  border: thin solid #5a2238;
 }
 #contact-section .contact-form .btn-send:hover {
-  border: 1px solid #02bdd5;
+  background: #5a2238;
+  color: #fff;
 }
 #contact-section input {
   display: block;
@@ -901,7 +1025,7 @@ figure figcaption p {
 #contact-section .email i,
 #contact-section .phone i {
   font-size: 45px;
-  color: #02bdd5;
+  color: #5a2238;
 }
 #contact-section .address h5,
 #contact-section .email h5,
@@ -1257,6 +1381,52 @@ ul.social-icons li {
   color: #777;
   line-height: 1.7;
 }
+.recharge .service-page .service-parts .block h5 ,
+.higher-ground .service-page .service-parts .block h5,
+.small-groups .service-page .service-parts .block h5,
+.Sunday-school.service-page .service-parts .block h5{
+  color: #fff;
+}
+.recharge .service-page .service-parts .block p,
+.higher-ground .service-page .service-parts .block p,
+.small-groups .service-page .service-parts .block p {
+  color: #E0E0E0;
+}
+.recharge .service-page .service-parts .block i,
+.recharge .service-page .service-parts .block h3
+{
+  color: #f2b632;
+}
+.recharge .service-page .service-parts .block p  a{
+  color: #f2b632;
+}
+.higher-ground .service-page .service-parts .block i,
+.higher-ground .service-page .service-parts .block h3
+{
+  color: #cb4040;
+}
+.higher-ground .service-page .service-parts .block p  a{
+  color: #cb4040;
+}
+.small-groups .service-page .service-parts .block i,
+.small-groups .service-page .service-parts .block h3
+{
+  color: #ff9001;
+}
+.small-groups .service-page .service-parts .block p  a{
+  color: #ff9001;
+}
+.Sunday-school .service-page .service-parts .block i,
+.Sunday-school .service-page .service-parts .block h3
+{
+  color: #283018;
+}
+.Sunday-school .service-page .service-parts .block p  a{
+  color: #283018;
+}
+.Sunday-school .service-page .service-parts .block p {
+  color: #424242;
+}
 /*.works.service-page figure .buttons {
   position: absolute;
   top: 45%;
@@ -1335,7 +1505,7 @@ ul.social-icons li {
   border-radius: 0;
 }
 .company-description {
-  margin-top: 100px;
+  padding-top: 50px;
   padding-bottom: 50px;
 }
 .company-description .block h3 {
@@ -1655,4 +1825,18 @@ article {
   padding: 8px 0;
   color: #fff;
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.recharge #top-bar .dropdown-menu > ul > li > a {
+  color: #fff;
+}
+.higher-ground .form-control:focus {
+  border-color: #757575;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px #757575;
+}
+.Sunday-school .form-control:focus {
+  border-color: #729f98;
+  box-shadow: inset 0 1px 1px rgba(0,0,0,.075),0 0 8px #729f98;
+}
+#music-section {
+	background: #fff;
 }
