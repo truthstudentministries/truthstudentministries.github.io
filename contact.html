@@ -54,10 +54,9 @@
         <script src="js/main.js"></script>
     </head>
     <body>
-        <!--
-        ==================================================
-        Header Section Start
-        ================================================== -->
+        <div id="event-flash-container">
+		   <h3 id="event-flash" class="fadeInLeft animated" data-wow-delay=".5s"><i class="ion-android-calendar"></i>&nbsp <strong> NEXT EVENT : </strong> Higher Ground - Saturday, May 6th - 3-7pm</h3>
+		</div>
         <header id="top-bar" class="navbar-fixed-top animated-header">
             <div class="container">
                 <div class="navbar-header">
@@ -73,7 +72,7 @@
                     <!-- logo -->
                     <div class="navbar-brand">
                         <a href="index.html" >
-                            <img src="images/logo.png" alt="">
+                            <img src="images/tsm.png" alt="">
                         </a>
                     </div>
                     <!-- /logo -->
@@ -85,10 +84,20 @@
                             <li>
                                 <a href="index.html" >Home</a>
                             </li>
-                            <li><a href="about.html">About</a></li>
-                            <li><a href="service.html">Service</a></li>
+                            <li><a href="about.html">Mission</a></li>
                             <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <span class="caret"></span></a>
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">Events<span class="caret"></span></a>
+                                <div class="dropdown-menu">
+                                    <ul>
+                                        <li><a href="recharge.html">Recharge</a></li>
+                                        <li><a href="higher-ground.html">Higher Ground</a></li>
+                                        <li><a href="small-groups.html">Small Groups</a></li>
+										<li><a href="Sunday-school.html">Sunday School</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+							<li class="dropdown">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">Pages<span class="caret"></span></a>
                                 <div class="dropdown-menu">
                                     <ul>
                                         <li><a href="404.html">404 Page</a></li>
@@ -96,17 +105,17 @@
                                     </ul>
                                 </div>
                             </li>
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown">Blog <span class="caret"></span></a>
+                            <li><a href="contact.html">Contact</a></li>
+							<li class="dropdown">
+                                <a href="" class="dropdown-toggle" data-toggle="dropdown">Lounge<span class="caret"></span></a>
                                 <div class="dropdown-menu">
                                     <ul>
-                                        <li><a href="blog-fullwidth.html">Blog Full</a></li>
-                                        <li><a href="blog-left-sidebar.html">Blog Left sidebar</a></li>
-                                        <li><a href="blog-right-sidebar.html">Blog Right sidebar</a></li>
+                                        <li><a href="music.html">Music</a></li>
+                                        <li><a href="blog-left-sidebar.html">Study</a></li>
+                                        <li><a href="blog-right-sidebar.html">Struggles</a></li>
                                     </ul>
                                 </div>
                             </li>
-                            <li><a href="contact.html">Contact</a></li>
                         </ul>
                     </div>
                 </nav>
@@ -152,7 +161,7 @@
                             <h2 class="subtitle wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".3s">What's Up?</h2>
                             <p class="subtitle-des wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
                                 Let us know whatever is on your mind. If you want more info, ask away. If you would like to get our 
-								weekly email about what event we have next, just leave us your email and "Newsletter" as the subject.
+								weekly email about what event we have next, scroll down for the newsletter signup.
                             </p>
                             <div class="contact-form">
                                 <form id="contact-form" method="post" action="sendmail.php" role="form">
@@ -222,69 +231,77 @@
                 </div>
             </div>
         </section>
-
-
-
-
-
-
-        <!-- 
-        ================================================== 
+		<!--
+            ==================================================
             Call To Action Section Start
-        ================================================== -->
-        <section id="call-to-action">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="block">
-                            <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">INTERESTED IN WORKING TOGETHER? ?</h1>
-                            <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nobis,</br>possimus commodi, fugiat magnam temporibus vero magni recusandae? Dolore, maxime praesentium.</p>
-                            <a href="contact.html" class="btn btn-default btn-contact wow fadeInDown" data-wow-delay=".7s" data-wow-duration="500ms">Contact With Me</a>
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-
-        <!-- 
-        ================================================== 
-            Footer Section Start
-        ================================================== -->
-        <footer id="footer">
-            <div class="container">
-                <div class="col-md-8">
-                    <p class="copyright">Copyright: <span>2015</span> . Design and Developed by <a href="http://www.Themefisher.com">Themefisher</a></p>
-                </div>
-                <div class="col-md-4">
-                    <!-- Social Media -->
-                    <ul class="social">
-                        <li>
-                            <a href="#" class="Facebook">
-                                <i class="ion-social-facebook"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="Twitter">
-                                <i class="ion-social-twitter"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="Linkedin">
-                                <i class="ion-social-linkedin"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="Google Plus">
-                                <i class="ion-social-googleplus"></i>
-                            </a>
-                        </li>
+            ================================================== -->
+            <section id="call-to-action">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="block">
+                                <h2 class="title wow fadeInDown" data-wow-delay=".3s" data-wow-duration="500ms">OUR WEEKLY EMAIL</h1>
+                                <p class="wow fadeInDown" data-wow-delay=".4s" data-wow-duration="500ms">Give us your email below and you'll get our TSM email.<br>Of course we 
+								only send emails about TSM and activities, nothing more.</p>
+								<form id="contact-form" method="post" action="sendmail.php" role="form">
                         
-                    </ul>
+                                    <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".5s">
+                                        <input type="email" placeholder="Your Email" class="form-control" name="newsemail" id="newsemail">
+                                    </div>
+									<div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
+                                        <input type="submit" id="contact-submit" class="btn btn-default btn-contact" value="Sign Up" data-wow-delay=".7s" data-wow-duration="500ms">
+                                    </div>                      
+                                    
+                                </form>
+                            </div>
+                        </div>
+                        
+                    </div>
                 </div>
-            </div>
-        </footer> <!-- /#footer -->
+            </section>
+            <!--
+            ==================================================
+            Footer Section Start
+            ================================================== -->
+            <footer id="footer">
+				<div class="row">
+					<img id="insta-header" src="images/insta.png"/>
+					<div id="insta-large" class="col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+						<!-- LightWidget WIDGET --><script src="http://lightwidget.com/widgets/lightwidget.js"></script><iframe src="http://lightwidget.com/widgets/b41ef75f851559889ff4e368c90fb73b.html" id="lightwidget_b41ef75f85" name="lightwidget_b41ef75f85"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+					</div>
+					<div id="insta-mid" class="col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+						<!-- LightWidget WIDGET --><script src="http://lightwidget.com/widgets/lightwidget.js"></script><iframe src="http://lightwidget.com/widgets/80aede4ff12a5bd28aa5675782d09e67.html" id="lightwidget_80aede4ff1" name="lightwidget_80aede4ff1"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+					</div>
+					<div id="insta-small" class="col-sm-12 col-md-offset-1 col-md-10 col-lg-offset-2 col-lg-8">
+						<!-- LightWidget WIDGET --><script src="http://lightwidget.com/widgets/lightwidget.js"></script><iframe src="http://lightwidget.com/widgets/d716fd9770785798bbe09b95dff00efd.html" id="lightwidget_d716fd9770" name="lightwidget_d716fd9770"  scrolling="no" allowtransparency="true" class="lightwidget-widget" style="width: 100%; border: 0; overflow: hidden;"></iframe>
+					</div>
+				</div>
+                <div class="container">
+					<div class="col-md-12">
+						<!-- Social Media -->
+                        <ul class="social">
+                            <li>
+                                <a href="https://www.instagram.com/truthstudentministries_/" class="Instagram" target="_BLANK">
+                                    <i class="ion-social-instagram"></i>
+                                </a>
+                            </li>
+							<li>
+                                <a href="https://www.facebook.com/groups/truthstudentministries/" class="Facebook" target="_BLANK">
+                                    <i class="ion-social-facebook"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="https://plus.google.com/communities/101166777350536880072" class="Google Plus" target="_BLANK">
+                                    <i class="ion-social-googleplus"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-md-12">
+                        <p class="copyright"><span>2016</span> . Design and Developed by <a href="http://jacobstringfellow.com">JS Design</a></p>
+                    </div>
+                </div>
+            </footer> <!-- /#footer -->
     
     </body>
 </html>
